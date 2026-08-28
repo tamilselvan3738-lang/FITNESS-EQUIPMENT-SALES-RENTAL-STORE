@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - FitFlex Fitness Store</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <!-- Google Fonts (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  
+    /* Mobile-first responsive normalization */
+    *, ::before, ::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: clip;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Responsive typography & equal spacing across breakpoints */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.25rem !important;
+        line-height: 2.5rem !important;
+      }
+      h2 {
+        font-size: 1.75rem !important;
+        line-height: 2rem !important;
+      }
+      h3 {
+        font-size: 1.5rem !important;
+        line-height: 1.75rem !important;
+      }
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.875rem !important;
+        line-height: 2.25rem !important;
+      }
+      h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.75rem !important;
+      }
+      .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+      .py-16 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+      }
+      .px-8 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+    }
+
+  </style>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGY0NmU1IiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCA4djhNMiAxMHY0TTIwIDh2OE0yMiAxMHY0TTIgMTJoMjAiLz48L3N2Zz4=">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- Header & Navbar Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- LOGO (Unique & Creative Gym + Sales/Rental loop SVG) -->
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div class="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 dark:from-indigo-500 dark:to-purple-500 shadow-md group-hover:scale-105 transition-transform duration-200">
+            <!-- Creative Dumbbell & Rental Cycle SVG Logo -->
+            <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Left plates -->
+              <path d="M4 8v8M2 10v4" />
+              <!-- Right plates -->
+              <path d="M20 8v8M22 10v4" />
+              <!-- Barbell shaft -->
+              <path d="M2 12h20" />
+              <!-- Center rotation ring (symbolizes cycle, rotation, sales/rental) -->
+              <path d="M12 7a5 5 0 0 1 4 4.5" class="text-indigo-100" />
+              <path d="M12 17a5 5 0 0 1-4-4.5" class="text-indigo-100" />
+              <!-- Loop Arrows -->
+              <polyline points="15 9.5 12 7 15 4.5" />
+              <polyline points="9 14.5 12 17 9 19.5" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent uppercase font-sans">
+              FitFlex
+            </span>
+            <span class="text-[9px] font-bold tracking-widest text-gray-500 dark:text-gray-400 uppercase -mt-1 font-sans">
+              Sales & Rental
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Items (Hidden on smaller screens) -->
+        <nav class="hidden xl:flex items-center space-x-1 rtl:space-x-reverse">
+          <!-- Home Dropdown -->
+          <div class="relative group">
+            <a href="index.html" class="inline-flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">
+              <span>Home</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <!-- Dropdown Menu -->
+            <div class="absolute left-0 rtl:left-auto rtl:right-0 mt-1 w-48 rounded-lg shadow-xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 py-1 hidden group-hover:block animate-in fade-in slide-in-from-top-1 duration-200">
+              <a href="index.html" class="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Home 1</a>
+              <a href="home 2.html" class="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Home 2</a>
+            </div>
+          </div>
+
+          <a href="about.html" class="px-3 py-2 text-sm font-bold text-indigo-600 dark:text-indigo-400 rounded-md bg-indigo-50/50 dark:bg-indigo-950/20 transition-colors">About</a>
+          <a href="buy.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Buy</a>
+          <a href="rent.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Rent</a>
+          <a href="brands.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Brands</a>
+          <a href="how-to-choose.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors whitespace-nowrap">How to Choose</a>
+          <a href="order.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Order</a>
+          <a href="cart.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Cart</a>
+          <a href="checkout.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Checkout</a>
+          <a href="contact.html" class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Side Utility Controls & Actions -->
+        <div class="hidden xl:flex items-center gap-4">
+          <!-- Dark Mode Toggle Button -->
+          <button id="themeToggleBtn" type="button" class="p-2.5 rounded-lg text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border border-transparent hover:border-gray-200 dark:hover:border-gray-700" aria-label="Toggle Theme">
+            <!-- Sun Icon (Visible in Dark Mode) -->
+            <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+            <!-- Moon Icon (Visible in Light Mode) -->
+            <svg id="moonIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+
+          <!-- Right to Left Toggle Button -->
+          <button id="rtlToggleBtn" type="button" class="p-2.5 rounded-lg text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border border-transparent hover:border-gray-200 dark:hover:border-gray-700" aria-label="Toggle Layout Direction">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </button>
+
+          <!-- Login Button -->
+          <a href="login.html" class="px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white shadow-md shadow-indigo-200 dark:shadow-none hover:scale-[1.02] active:scale-[0.98] transition-all text-center block font-sans">
+            Login
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex xl:hidden items-center">
+          <button id="mobileMenuToggleBtn" type="button" class="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Menu">
+            <svg id="hamburgerIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Expanded Menu (Hidden by default) -->
+  <div id="mobileMenu" class="hidden xl:hidden fixed inset-x-0 top-20 bottom-0 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 flex flex-col justify-between overflow-hidden z-50">
+    
+    <!-- Mobile Links (Scrollable area) -->
+    <div class="flex-grow overflow-y-auto px-4 py-3 space-y-2">
+      <!-- Home Submenu (Collapsible on Mobile) -->
+      <div class="space-y-1">
+        <button id="mobileHomeMenuBtn" class="flex items-center justify-between w-full px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">
+          <span>Home</span>
+          <svg id="mobileHomeChevron" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="mobileHomeDropdown" class="hidden pl-6 rtl:pl-0 rtl:pr-6 space-y-1 mt-1 border-l-2 rtl:border-l-0 rtl:border-r-2 border-indigo-600">
+          <a href="index.html" class="block px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400">Home 1</a>
+          <a href="home 2.html" class="block px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400">Home 2</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="block px-3 py-2 text-base font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/70 dark:bg-indigo-950/30 rounded-md">About</a>
+      <a href="buy.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Buy</a>
+      <a href="rent.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Rent</a>
+      <a href="brands.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Brands</a>
+      <a href="how-to-choose.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">How to Choose</a>
+      <a href="order.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Order</a>
+      <a href="cart.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Cart</a>
+      <a href="checkout.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Checkout</a>
+      <a href="contact.html" class="block px-3 py-2 text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">Contact</a>
+    </div>
+    
+    <!-- Mobile Preferences & Actions (Pinned at the bottom) -->
+    <div class="border-t border-gray-100 dark:border-gray-800 px-4 py-4 space-y-4 bg-white dark:bg-gray-900 sticky bottom-0">
+      <!-- Preferences Toggle Row -->
+      <div class="flex items-center justify-between px-3">
+        <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">Settings</span>
+        <div class="flex items-center gap-2">
+          <!-- Mobile Theme Toggle -->
+          <button id="mobileThemeToggleBtn" type="button" class="p-2 rounded-lg text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors border border-transparent hover:border-gray-200 dark:hover:border-gray-700" aria-label="Toggle Theme">
+            <svg id="mobileSunIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+            <svg id="mobileMoonIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+
+          <!-- Mobile RTL Toggle -->
+          <button id="mobileRtlToggleBtn" type="button" class="p-2 rounded-lg text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors border border-transparent hover:border-gray-200 dark:hover:border-gray-700" aria-label="Toggle Layout Direction">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <a href="login.html" class="w-full px-4 py-3 rounded-xl text-center text-base font-semibold bg-indigo-600 dark:bg-indigo-500 hover:bg-indigo-700 text-white shadow-md block font-sans">
+        Login
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow pt-20">
+    <!-- Section 1: About Our Store (Asymmetric Visual Narrative Hero) -->
+    <section id="about-hero" class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-tr from-indigo-50/40 via-white to-purple-50/20 dark:from-gray-950 dark:via-gray-900 dark:to-purple-950/10 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Text Narrative -->
+          <div class="lg:col-span-7 space-y-6 text-left rtl:text-right">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
+              Our Journey
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-gray-900 dark:text-white leading-tight">
+              We Don't Just Sell Fitness Gear.<br>
+              <span class="bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">We Engineer Lifestyles.</span>
+            </h1>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              FitFlex was founded in 2012 by a team of biomechanical engineers and professional training coaches who noticed a recurring flaw in the fitness industry: standard retail options locked fitness enthusiasts into expensive, permanent purchases, while basic rentals provided sub-par, worn-out equipment.
+            </p>
+            <p class="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
+              We changed the game by creating a dual ecosystem. Whether you want to purchase cutting-edge, commercial-grade gym systems for a lifetime or rent premium, calibrated equipment with flexible terms for a seasonal goal, FitFlex provides the perfect, customized path.
+            </p>
+            
+            <!-- Quick Stats Dashboard -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-gray-150 dark:border-gray-800">
+              <div>
+                <p class="text-3xl font-black text-indigo-600 dark:text-indigo-400">10,000+</p>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1">Gyms Configured</p>
+              </div>
+              <div>
+                <p class="text-3xl font-black text-purple-600 dark:text-purple-400">99.8%</p>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1">Safety Rating</p>
+              </div>
+              <div>
+                <p class="text-3xl font-black text-indigo-600 dark:text-indigo-400">24hr</p>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1">Rapid Delivery</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Showroom Asymmetric Visual Frame -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-indigo-500/10 to-purple-500/10 blur-xl dark:opacity-30"></div>
+            <!-- Portraited Image with asymmetrical organic clip style -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-t-8 border-l-8 border-indigo-600 dark:border-indigo-500 aspect-[4/5] lg:aspect-[3/4]">
+              <img src="images/about_showroom.jpg" alt="FitFlex Premium Showroom" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent"></div>
+              
+              <!-- Floating Card -->
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 dark:bg-gray-900/95 backdrop-blur border border-white/20 shadow-lg text-left rtl:text-right font-sans">
+                <p class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400 tracking-wider">FitFlex Headquarters</p>
+                <p class="text-sm font-semibold text-gray-800 dark:text-gray-200 mt-0.5">Explore our flagship test facility & showroom.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Our Mission (Interactive Tabbed Vision & Values) -->
+    <section id="about-mission" class="py-20 lg:py-28 bg-white dark:bg-gray-900 border-t border-b border-gray-150 dark:border-gray-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto mb-16">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 mb-3 uppercase tracking-wider">Our North Star</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">Our Mission & Core Pillars</h2>
+          <p class="text-gray-600 dark:text-gray-400 mt-4">We are dedicated to building a healthier, more active world through access, sustainability, and support.</p>
+        </div>
+        
+        <!-- Pillar Flow Timeline Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+          
+          <!-- Pillar 1 -->
+          <div class="relative group p-8 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 hover:border-indigo-500/30 dark:hover:border-indigo-500/20 transition-all hover:shadow-xl text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-300">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Democratizing Health</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                Premium commercial-grade gym machines shouldn't be locked behind expensive memberships or exorbitant buy prices. We enable home users and boutique trainers to access Olympic-level training gear at custom budgets.
+              </p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-150 dark:border-gray-805 text-xs font-bold text-gray-500 dark:text-gray-400">Pillar 01 / Accessibility</div>
+          </div>
+          
+          <!-- Pillar 2 -->
+          <div class="relative group p-8 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 hover:border-indigo-500/30 dark:hover:border-indigo-500/20 transition-all hover:shadow-xl text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-300">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1 1 21.306 7H18" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Circular Life-Cycle</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                Our planet does not need more gym waste. We maintain a zero-landfill initiative. We reclaim, restore, and fully re-manufacture steel frames and mechanical parts, expanding the product lifespan and reducing carbon footprints.
+              </p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-150 dark:border-gray-805 text-xs font-bold text-gray-500 dark:text-gray-400">Pillar 02 / Circular Fitness</div>
+          </div>
+          
+          <!-- Pillar 3 -->
+          <div class="relative group p-8 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 hover:border-indigo-500/30 dark:hover:border-indigo-500/20 transition-all hover:shadow-xl text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-300">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Community Integration</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                A portion of every purchase and rental transaction goes directly toward equipping community centers, local schools, and rehabilitation clinics with fully certified, safe training spaces.
+              </p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-150 dark:border-gray-805 text-xs font-bold text-gray-500 dark:text-gray-400">Pillar 03 / Wellness Donation</div>
+          </div>
+          
+        </div>
+        
+        <!-- Large visual banner inside Section 2 -->
+        <div class="mt-16 rounded-3xl overflow-hidden shadow-lg relative aspect-[21/9] hidden md:block">
+          <img src="images/about_mission.jpg" alt="FitFlex Vision Banner" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-indigo-950/20 backdrop-blur-[1px] flex items-center justify-center">
+            <p class="text-2xl lg:text-3xl font-extrabold text-white text-shadow text-center px-6">
+              "We measure success not by inventory volume, but by active, healthy heartbeats."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Why Choose Us (Skewed/Floating Card Comparison) -->
+    <section id="about-why-choose-us" class="py-20 lg:py-28 bg-slate-50 dark:bg-gray-950 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+          <div class="lg:col-span-6 space-y-4 text-left rtl:text-right">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-100 dark:bg-purple-950/40 text-purple-700 dark:text-purple-400 uppercase tracking-wider">Unfair Advantage</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">Why Choose FitFlex?</h2>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+              We stand apart because we do not operate like traditional equipment stores or faceless rental agencies. Every aspect of our operations is designed to reduce friction and optimize your workout results.
+            </p>
+          </div>
+          
+          <div class="lg:col-span-6 flex justify-end">
+            <!-- Skewed visual graphic representing flexibility -->
+            <div class="relative w-80 h-48 rounded-2xl overflow-hidden shadow-lg transform -skew-y-3 hover:skew-y-0 transition-transform duration-300">
+              <img src="images/about_flexibility.jpg" alt="Why Choose Us" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-900/60 to-purple-900/40 flex items-center justify-center p-4">
+                <span class="text-white text-lg font-bold text-center">Engineered for absolute agility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slanted Floating Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-800 p-8 rounded-3xl transition-transform hover:-translate-y-2 hover:shadow-xl duration-300 text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="text-3xl font-black text-indigo-600 dark:text-indigo-400 mb-4">01</div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Rental-to-Own Path</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Unsure if you will use a treadmill long term? Rent it first. If you fall in love with it, convert your rental to a purchase at any time. We credit 70% of your accumulated rental payments towards the purchase price!
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+              <span>Read Policy</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-800 p-8 rounded-3xl transition-transform hover:-translate-y-2 hover:shadow-xl duration-300 text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="text-3xl font-black text-purple-600 dark:text-purple-400 mb-4">02</div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Zero Maintenance Cost</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                As long as you rent with us, all mechanical adjustments, motor updates, safety tests, and spare parts are 100% free. If your unit requires service, our certified technicians fix it on site, or we swap it immediately.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-2 text-xs font-bold text-purple-600 dark:text-purple-400">
+              <span>Maintenance Info</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-800 p-8 rounded-3xl transition-transform hover:-translate-y-2 hover:shadow-xl duration-300 text-left rtl:text-right flex flex-col justify-between">
+            <div>
+              <div class="text-3xl font-black text-indigo-600 dark:text-indigo-400 mb-4">03</div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Biomechanical Matching</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Our support team uses motion-analysis profiles. We don't just ship boxes; we help you select equipment dimensions, shock absorbencies, and handle profiles custom-tailored to your joints, stride, and goals.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+              <span>Try Matching</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Product Quality (Interactive Hotspot Inspection Showcase) -->
+    <section id="about-quality" class="py-20 lg:py-28 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 mb-3 uppercase tracking-wider">Certified Durability</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">Our 4-Gate Quality Verification</h2>
+          <p class="text-gray-600 dark:text-gray-400 mt-4">Every piece of fitness gear in our inventory undergoes rigorous technical stress testing before it receives the FitFlex Golden Certification stamp.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Large Inspection Image Left -->
+          <div class="lg:col-span-6 relative">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl blur-md opacity-20 dark:opacity-30"></div>
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-gray-150 dark:border-gray-800">
+              <img src="images/about_quality.jpg" alt="Technical Calibration Quality" class="w-full h-auto">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-6">
+                <div class="text-left rtl:text-right">
+                  <p class="text-lg font-bold text-white">Full-Spectrum Diagnostics</p>
+                  <p class="text-xs text-gray-300">A certified technician verifying treadmill deck deflection under simulated load patterns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quality Gates Timeline Right -->
+          <div class="lg:col-span-6 text-left rtl:text-right">
+            
+            <!-- Gate 1 -->
+            <div class="relative pl-14 pb-8 rtl:pl-0 rtl:pr-14">
+              <!-- Circle -->
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 top-0 w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm shadow shrink-0 z-10">1</div>
+              <!-- Vertical Line -->
+              <div class="absolute left-4 rtl:left-auto rtl:right-4 top-8 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800"></div>
+              
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Gate 1: Ultrasonic Structural Scan</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  We verify steel weld density, inspect tube integrity, and analyze load balance to guarantee a fatigue-free structural frame rating.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Gate 2 -->
+            <div class="relative pl-14 pb-8 rtl:pl-0 rtl:pr-14">
+              <!-- Circle -->
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 top-0 w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm shadow shrink-0 z-10">2</div>
+              <!-- Vertical Line -->
+              <div class="absolute left-4 rtl:left-auto rtl:right-4 top-8 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800"></div>
+              
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Gate 2: Biomechanical Calibration</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Deck cushioning elastomers and joint pivot points are verified using load sensors to prevent excessive force rebound on user joints.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Gate 3 -->
+            <div class="relative pl-14 pb-8 rtl:pl-0 rtl:pr-14">
+              <!-- Circle -->
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 top-0 w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm shadow shrink-0 z-10">3</div>
+              <!-- Vertical Line -->
+              <div class="absolute left-4 rtl:left-auto rtl:right-4 top-8 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800"></div>
+              
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Gate 3: Telemetry & Console Audit</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Motor controllers, tablet telemetry links, interactive heart-rate sensors, and resistance magnetics are bench-tested for 12 hours.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Gate 4 -->
+            <div class="relative pl-14 rtl:pl-0 rtl:pr-14">
+              <!-- Circle -->
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 top-0 w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm shadow shrink-0 z-10">4</div>
+              
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Gate 4: Safety Shield Protocols</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  We test physical auto-stop safety keys, check electrical grounding loops, and verify speed governor cutoffs to protect your home and family.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Customer Support (FitFlex Concierge SLA & Process) -->
+    <section id="about-support" class="py-20 lg:py-28 bg-slate-50 dark:bg-gray-950 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Text Columns Left -->
+          <div class="lg:col-span-5 space-y-6 text-left rtl:text-right">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400 uppercase tracking-wider">Unmatched Support</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">The FitFlex Concierge SLA</h2>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+              We know that downtime on equipment is a major setback to your wellness momentum. That is why our customer support infrastructure behaves like a premium membership service.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              When you call or chat with us, you are instantly connected to a biomechanical layout planner or a certified technician based in our local experience centers. No bots, no outsourcing, no delayed tickets.
+            </p>
+            
+            <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-bold transition-all shadow-md">
+              <span>Talk to an Expert</span>
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+          
+          <!-- Grid & Visuals Right -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
+            <!-- Icon Card 1 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-805 text-left rtl:text-right shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-gray-900 dark:text-white">12-Hour Priority Response</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Every ticket or query receives a dedicated human technical response in under 12 hours.</p>
+            </div>
+            
+            <!-- Icon Card 2 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-805 text-left rtl:text-right shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-gray-900 dark:text-white">48hr On-Site Tech Visit</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">If your treadmill needs physical tuning, a mobile service technician will visit within 48 hours.</p>
+            </div>
+            
+            <!-- Icon Card 3 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-805 text-left rtl:text-right shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 01.553-.894L9 2m0 18l6-3m-6 3V2m6 15l5.447 2.724A1 1 0 0022 18.826V8.072a1 1 0 00-.553-.894L16 4m0 13V4m0 0L9 2" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-gray-900 dark:text-white">Space Planning CADs</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Submit measurements, and we build customized 3D CAD design layouts of your home gym for free.</p>
+            </div>
+            
+            <!-- Image Card 4 -->
+            <div class="rounded-2xl overflow-hidden shadow relative aspect-square sm:aspect-auto border border-gray-150 dark:border-gray-850">
+              <img src="images/about_support.jpg" alt="Dedicated Support Team" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-indigo-950/20"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Our Showroom (Virtual Tour & Experience Center) -->
+    <section id="about-showroom" class="py-20 lg:py-28 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image Gallery Left -->
+          <div class="lg:col-span-6 order-2 lg:order-1 relative">
+            <div class="grid grid-cols-12 gap-4">
+              <!-- Showroom visual 1 -->
+              <div class="col-span-8 rounded-3xl overflow-hidden shadow-md aspect-[4/3] border border-gray-150 dark:border-gray-800 animate-pulse-slow">
+                <img src="images/about_showroom_experience.jpg" alt="Showroom Trial Zone" class="w-full h-full object-cover">
+              </div>
+              
+              <!-- Decorative icon grid -->
+              <div class="col-span-4 rounded-3xl bg-indigo-50 dark:bg-gray-950 flex flex-col items-center justify-center p-4 border border-gray-100 dark:border-gray-900">
+                <span class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">12</span>
+                <span class="text-[9px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest text-center mt-1">Trial Stations</span>
+              </div>
+              
+              <!-- Showroom visual 2 -->
+              <div class="col-span-4 rounded-3xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center shadow-lg">
+                <p class="text-xs font-semibold uppercase tracking-wider">Flagship Location</p>
+                <p class="text-xl font-bold mt-1">Gym City</p>
+              </div>
+              
+              <div class="col-span-8 rounded-3xl overflow-hidden shadow-md aspect-[16/9] border border-gray-150 dark:border-gray-800">
+                <img src="images/cart_showroom.jpg" alt="Try before buy" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Text Narrative Right -->
+          <div class="lg:col-span-6 order-1 lg:order-2 space-y-6 text-left rtl:text-right">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400 uppercase tracking-wider">Physical Hub</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">Step Into The FitFlex Experience Center</h2>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+              We believe online photos do not tell the whole story of premium fitness machines. You need to feel the deck cushioning under your running stride and experience the pulley smoothness of a commercial stack.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Our Flagship Experience Center features 12 dedicated trial stations, certified coaches, and custom color swatches where you can test-drive our complete lineup. Book an appointment or walk in today.
+            </p>
+            
+            <div class="pt-4 border-t border-gray-150 dark:border-gray-800">
+              <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">Store Hours</p>
+              <p class="text-sm font-semibold text-gray-800 dark:text-gray-200 mt-1">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+              <p class="text-xs text-gray-400 dark:text-gray-500">123 Fitness Way, Gym City, GC 90210</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Sustainability & Circular Fitness (Green Eco-Impact Grid) -->
+    <section id="about-sustainability" class="py-20 lg:py-28 bg-gradient-to-br from-indigo-950 via-slate-900 to-emerald-950 text-white transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Text Column -->
+          <div class="lg:col-span-7 space-y-6 text-left rtl:text-right">
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-emerald-950/65 text-emerald-400 border border-emerald-800/40">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707" />
+              </svg>
+              Eco Initiative
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">The FitFlex Circular Fitness Program</h2>
+            <p class="text-gray-300 leading-relaxed">
+              We take responsibility for the full lifetime of our fitness gear. Fitness machines are heavy, steel-intensive structures. If left to landfills, they represent a significant waste of natural resources.
+            </p>
+            <p class="text-gray-400">
+              Through our circular initiative, we purchase back commercial gym components, fully sandblast and clean the steel frames, rebuild motors with sustainable energy cores, and deploy them to budget-constrained municipal sites.
+            </p>
+            
+            <!-- Sustainability numbers -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-emerald-900/50">
+              <div>
+                <p class="text-4xl font-black text-emerald-400">520 Tons</p>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Steel Recycled</p>
+              </div>
+              <div>
+                <p class="text-4xl font-black text-emerald-400">100%</p>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Eco-Powder Coating</p>
+              </div>
+              <div>
+                <p class="text-4xl font-black text-emerald-400">40+ Gyms</p>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Donated to Schools</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Image Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-4 bg-emerald-500 rounded-3xl blur-xl opacity-10"></div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-emerald-800/40">
+              <img src="images/about_sustainability.jpg" alt="Sustainability and Circular fitness" class="w-full h-auto object-cover aspect-[4/3]">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/90 to-transparent flex items-end p-6">
+                <div class="text-left rtl:text-right font-sans">
+                  <p class="text-sm font-semibold text-emerald-400">Rebuilt & Certified</p>
+                  <p class="text-xs text-gray-300 mt-1">Refurbished steel dumbbells waiting for coating in our solar-powered workshop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 dark:bg-black dark:text-gray-400 border-t border-gray-800 dark:border-gray-950 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      
+      <!-- Top Grid: 4 Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12 text-left rtl:text-right">
+        
+        <!-- Column 1: Brand & Socials -->
+        <div class="flex flex-col gap-4 text-left rtl:text-right">
+          <!-- Logo Replicated Exactly -->
+          <a href="#" class="flex items-center gap-3 group shrink-0">
+            <div class="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 dark:from-indigo-500 dark:to-purple-500 shadow-md group-hover:scale-105 transition-transform duration-200">
+              <!-- Creative Dumbbell & Rental Cycle SVG Logo -->
+              <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Left plates -->
+                <path d="M4 8v8M2 10v4" />
+                <!-- Right plates -->
+                <path d="M20 8v8M22 10v4" />
+                <!-- Barbell shaft -->
+                <path d="M2 12h20" />
+                <!-- Center rotation ring (symbolizes cycle, rotation, sales/rental) -->
+                <path d="M12 7a5 5 0 0 1 4 4.5" class="text-indigo-100" />
+                <path d="M12 17a5 5 0 0 1-4-4.5" class="text-indigo-100" />
+                <!-- Loop Arrows -->
+                <polyline points="15 9.5 12 7 15 4.5" />
+                <polyline points="9 14.5 12 17 9 19.5" />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent uppercase font-sans">
+                FitFlex
+              </span>
+              <span class="text-[9px] font-bold tracking-widest text-gray-500 dark:text-gray-400 uppercase -mt-1 font-sans">
+                Sales & Rental
+              </span>
+            </div>
+          </a>
+          <p class="text-sm leading-relaxed text-gray-400 dark:text-gray-500">
+            Your ultimate partner in fitness. We offer premium treadmill, strength, and cardio gear for sale or rent. Elevate your training today.
+          </p>
+          
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 mt-2">
+            <!-- Facebook -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-indigo-600 dark:bg-gray-900 dark:hover:bg-indigo-500 text-gray-400 hover:text-white flex items-center justify-center transition-all shadow-sm" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-indigo-600 dark:bg-gray-900 dark:hover:bg-indigo-500 text-gray-400 hover:text-white flex items-center justify-center transition-all shadow-sm" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-indigo-600 dark:bg-gray-900 dark:hover:bg-indigo-500 text-gray-400 hover:text-white flex items-center justify-center transition-all shadow-sm" aria-label="YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.388.555a3.002 3.002 0 0 0-2.11 2.108C0 8.03 0 12 0 12s0 3.97.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.48 20.5 12 20.5 12 20.5s7.52 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.97 24 12 24 12s0-3.97-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-indigo-600 dark:bg-gray-900 dark:hover:bg-indigo-500 text-gray-400 hover:text-white flex items-center justify-center transition-all shadow-sm" aria-label="Twitter X">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Shop & Rentals -->
+        <div>
+          <h2 class="text-sm font-bold text-white uppercase tracking-wider mb-5 pb-1 border-b border-gray-800 dark:border-gray-900 inline-block">Shop & Rentals</h2>
+          <ul class="space-y-3.5 text-sm text-left rtl:text-right">
+            <li><a href="buy.html" class="hover:text-indigo-400 transition-colors">Buy Fitness Equipment</a></li>
+            <li><a href="rent.html" class="hover:text-indigo-400 transition-colors">Rent Treadmills & Gym Gear</a></li>
+            <li><a href="brands.html" class="hover:text-indigo-400 transition-colors">Top Strength Brands</a></li>
+            <li><a href="how-to-choose.html" class="hover:text-indigo-400 transition-colors">Special Offers & Deals</a></li>
+            <li><a href="cart.html" class="hover:text-indigo-400 transition-colors">View Shopping Cart</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Help & Guides -->
+        <div>
+          <h2 class="text-sm font-bold text-white uppercase tracking-wider mb-5 pb-1 border-b border-gray-800 dark:border-gray-900 inline-block">Help & Guides</h2>
+          <ul class="space-y-3.5 text-sm text-left rtl:text-right">
+            <li><a href="how-to-choose.html" class="hover:text-indigo-400 transition-colors">How to Choose Guide</a></li>
+            <li><a href="order.html" class="hover:text-indigo-400 transition-colors">Track Your Order</a></li>
+            <li><a href="contact.html" class="hover:text-indigo-400 transition-colors">Delivery & Setup Info</a></li>
+            <li><a href="rent.html" class="hover:text-indigo-400 transition-colors">Rental Terms & Policy</a></li>
+            <li><a href="about.html" class="hover:text-indigo-400 transition-colors">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4: Contact Store -->
+        <div>
+          <h2 class="text-sm font-bold text-white uppercase tracking-wider mb-5 pb-1 border-b border-gray-800 dark:border-gray-900 inline-block">Get In Touch</h2>
+          <ul class="space-y-4 text-sm text-gray-400 dark:text-gray-500 text-left rtl:text-right">
+            <!-- Address -->
+            <li class="flex gap-3 text-gray-300 dark:text-gray-400">
+              <svg class="w-5 h-5 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>123 Fitness Way, Gym City, GC 90210</span>
+            </li>
+            <!-- Phone -->
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:+18005553539" class="hover:text-indigo-400 transition-colors">+1 (800) 555-FLEX</a>
+            </li>
+            <!-- Email -->
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:support@fitflex.com" class="hover:text-indigo-400 transition-colors">support@fitflex.com</a>
+            </li>
+            <!-- Hours -->
+            <li class="flex gap-3 pt-1 border-t border-gray-800 dark:border-gray-900 text-xs">
+              <svg class="w-5 h-5 shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for synchronization -->
+  <script>
+    // --- Dark Mode / Light Mode Functionality ---
+    const htmlEl = document.documentElement;
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const mobileThemeToggleBtn = document.getElementById('mobileThemeToggleBtn');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+    const mobileSunIcon = document.getElementById('mobileSunIcon');
+    const mobileMoonIcon = document.getElementById('mobileMoonIcon');
+
+    function toggleDarkMode() {
+      if (htmlEl.classList.contains('dark')) {
+        // Switch to Light Mode
+        htmlEl.classList.remove('dark');
+        htmlEl.classList.add('light');
+        localStorage.setItem('theme', 'light');
+        updateThemeUI(false);
+      } else {
+        // Switch to Dark Mode
+        htmlEl.classList.remove('light');
+        htmlEl.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        updateThemeUI(true);
+      }
+    }
+
+    function updateThemeUI(isDark) {
+      if (isDark) {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        mobileSunIcon.classList.remove('hidden');
+        mobileMoonIcon.classList.add('hidden');
+      } else {
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        mobileSunIcon.classList.add('hidden');
+        mobileMoonIcon.classList.remove('hidden');
+      }
+    }
+
+    // Attach listeners
+    themeToggleBtn.addEventListener('click', toggleDarkMode);
+    mobileThemeToggleBtn.addEventListener('click', toggleDarkMode);
+
+    // Initialize theme based on preference or local storage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlEl.classList.remove('light');
+      htmlEl.classList.add('dark');
+      updateThemeUI(true);
+    } else {
+      htmlEl.classList.remove('dark');
+      htmlEl.classList.add('light');
+      updateThemeUI(false);
+    }
+
+
+    // --- Right to Left (RTL) Layout Functionality ---
+    const rtlToggleBtn = document.getElementById('rtlToggleBtn');
+    const mobileRtlToggleBtn = document.getElementById('mobileRtlToggleBtn');
+
+    function toggleRTL() {
+      if (htmlEl.dir === 'rtl') {
+        htmlEl.dir = 'ltr';
+      } else {
+        htmlEl.dir = 'rtl';
+      }
+    }
+
+    rtlToggleBtn.addEventListener('click', toggleRTL);
+    mobileRtlToggleBtn.addEventListener('click', toggleRTL);
+
+
+    // --- Mobile Menu Toggle Functionality ---
+    const mobileMenuToggleBtn = document.getElementById('mobileMenuToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    mobileMenuToggleBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+    });
+
+
+    // --- Mobile Collapsible Dropdown for "Home" ---
+    const mobileHomeMenuBtn = document.getElementById('mobileHomeMenuBtn');
+    const mobileHomeDropdown = document.getElementById('mobileHomeDropdown');
+    const mobileHomeChevron = document.getElementById('mobileHomeChevron');
+
+    mobileHomeMenuBtn.addEventListener('click', () => {
+      const isDropdownHidden = mobileHomeDropdown.classList.contains('hidden');
+      if (isDropdownHidden) {
+        mobileHomeDropdown.classList.remove('hidden');
+        mobileHomeChevron.classList.add('rotate-180');
+      } else {
+        mobileHomeDropdown.classList.add('hidden');
+        mobileHomeChevron.classList.remove('rotate-180');
+      }
+    });
+  </script>
+</body>
+</html>
