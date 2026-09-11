@@ -82,7 +82,7 @@
 
   <!-- Header & Navbar Navigation -->
   <header class="fixed top-0 left-0 right-0 z-50 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div class="flex items-center justify-between h-20">
         
         <!-- LOGO (Unique & Creative Gym + Sales/Rental loop SVG) -->
@@ -197,7 +197,7 @@
         </button>
         <div id="mobileHomeDropdown" class="hidden pl-6 rtl:pl-0 rtl:pr-6 space-y-1 mt-1 border-l-2 rtl:border-l-0 rtl:border-r-2 border-indigo-600">
           <a href="index.html" class="block px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400">Home 1</a>
-          <a href="home 2.html" class="block px-3 py-2 text-sm font-medium text-indigo-650 hover:text-indigo-600">Home 2</a>
+          <a href="home 2.html" class="block px-3 py-2 text-sm font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/50 dark:bg-indigo-950/20 rounded-md">Home 2</a>
         </div>
       </div>
 
@@ -232,282 +232,842 @@
           </button>
         </div>
       </div>
-      <button type="button" class="w-full px-4 py-3 rounded-xl text-center text-base font-semibold bg-indigo-600 dark:bg-indigo-500 hover:bg-indigo-700 text-white shadow-md">
+      <a href="login.html" class="w-full px-4 py-3 rounded-xl text-center text-base font-semibold bg-indigo-600 dark:bg-indigo-500 hover:bg-indigo-700 text-white shadow-md block">
         Login
-      </button>
+      </a>
     </div>
   </div>
 
-  <!-- MAIN HOME 2 CONTENT (7 UNIQUE SECTIONS) -->
+  <!-- MAIN HOME 2 CONTENT: FITFLEX PRO FACILITY ARCHITECTURE & 3D GYM STUDIO -->
   <main class="flex-grow font-sans pt-20">
     
-    <!-- Section 1: Home Gym Planning Hero (Distinct layout with Clipboard Guide Image) -->
-    <section id="planning-hero" class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-indigo-950 via-gray-900 to-indigo-900 text-white transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left rtl:text-right">
-          <div class="space-y-6">
-            <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-300 bg-indigo-500/20 border border-indigo-500/30 rounded-full">
-              Designing Specialist
-            </span>
-            <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
-              Architect Your Gym Floor Layout
-            </h1>
-            <p class="text-base text-gray-300 leading-relaxed">
-              We guide you through space tolerances, ceiling heights, electrical calibrations, and strength rack selections to plan the perfect workout environment.
-            </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-              <a href="buy.html" class="px-6 py-3 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition-all">
-                Shop Rigs Catalog
-              </a>
-              <a href="#space-planner" class="px-6 py-3 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/20 text-white transition-all">
-                Plan Sizing Area
-              </a>
-            </div>
-          </div>
+    <!-- Section 1: Hero Section - Full-Width Immersive Facility Architecture Hero -->
+    <section id="architectural-hero" class="relative min-h-[520px] lg:min-h-[580px] flex items-center py-16 lg:py-20 overflow-hidden bg-gradient-to-b from-slate-950 via-gray-900 to-slate-950 text-white transition-colors duration-300 w-full">
+      <!-- High-tech blueprint grid overlay -->
+      <div class="absolute inset-0 opacity-[0.07] bg-[linear-gradient(to_right,#818cf8_1px,transparent_1px),linear-gradient(to_bottom,#818cf8_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div class="relative group">
-            <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-20 blur-xl"></div>
-            <div class="relative overflow-hidden rounded-2xl border border-gray-800 shadow-xl">
-              <img src="images/home2_hero.jpg" alt="FitFlex custom gym checklists and templates" class="w-full object-cover aspect-[3/2] group-hover:scale-[1.02] transition-transform duration-300" />
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+        
+        <!-- Top Tech Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-indigo-500/15 border border-indigo-500/30 text-indigo-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          Commercial Facility Architecture & 3D Gym Fitout Studio
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight max-w-5xl mx-auto">
+          Architect Your <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">Complete Training Facility</span> From CAD to First Rep
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          From high-volume commercial clubs to boutique athletic studios: we engineer structural clearances, 11-gauge laser-cut power cages, acoustic subfloor isolation, and guaranteed 14-day turnkey deployment.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <a href="#zone-explorer" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 hover:scale-105 active:scale-95 transition-all">
+            Launch 3D Zone Explorer
+          </a>
+          <a href="#space-calculator" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-white/10 hover:bg-white/20 text-white border border-white/15 backdrop-blur transition-all">
+            Space Area & Payload Estimator
+          </a>
+          <a href="#b2b-terminal" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white shadow-md transition-all">
+            Request 3D CAD Blueprint
+          </a>
+        </div>
+
+        <!-- Metric Ribbon (4 Key KPIs) -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pt-10 max-w-5xl mx-auto text-left rtl:text-right">
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+            <span class="text-2xl sm:text-3xl font-black text-indigo-400 block">1,250+</span>
+            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1 block">Commercial Gyms Outfitted</span>
+          </div>
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+            <span class="text-2xl sm:text-3xl font-black text-purple-400 block">48-Hour</span>
+            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1 block">3D CAD Turnaround SLA</span>
+          </div>
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+            <span class="text-2xl sm:text-3xl font-black text-indigo-400 block">11-Gauge</span>
+            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1 block">Laser-Cut Structural Steel</span>
+          </div>
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+            <span class="text-2xl sm:text-3xl font-black text-emerald-400 block">99.8%</span>
+            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1 block">Commercial Fleet Uptime</span>
+          </div>
+        </div>
+
+        <!-- Project Type Filter Pills -->
+        <div class="pt-4 flex flex-wrap justify-center items-center gap-2 text-xs font-medium text-gray-400">
+          <span class="text-gray-500 font-bold uppercase tracking-widest text-[10px]">Specialized Sectors:</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">Commercial Health Clubs</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">Boutique Athletic Boxes</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">Corporate Wellness Centers</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">High-End Residential Suites</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">University Athletic Labs</span>
+        </div>
+
+        <!-- Hero Featured Architectural Render Frame -->
+        <div class="pt-6">
+          <div class="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-slate-900 group">
+            <img src="images/home2_hero.jpg" alt="Commercial gym 3D architectural floorplan design blueprint" class="w-full object-cover max-h-[520px] group-hover:scale-[1.01] transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+            
+            <!-- Live Blueprint Hotspot Badges -->
+            <div class="absolute top-6 left-6 p-3 rounded-xl bg-slate-900/90 border border-indigo-500/40 backdrop-blur text-left rtl:text-right hidden sm:block">
+              <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider block">Zone 01 Clearance</span>
+              <span class="text-xs font-black text-white">48" Heavy Barbell Corridor</span>
+            </div>
+            <div class="absolute bottom-6 left-6 p-3 rounded-xl bg-slate-900/90 border border-emerald-500/40 backdrop-blur text-left rtl:text-right hidden sm:block">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Subfloor Isolation</span>
+              <span class="text-xs font-black text-white">25mm Dual-Density Vulcanized Rubber</span>
+            </div>
+            <div class="absolute bottom-6 right-6 p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 backdrop-blur text-right rtl:text-left hidden sm:block">
+              <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider block">Power Telemetry</span>
+              <span class="text-xs font-black text-white">Dedicated 20A Commercial Circuit Drop</span>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Section 2: Modular Cardio Layouts (Enriched Cardio Content) -->
-    <section id="cardio-layouts" class="py-20 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-850 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
-        <div>
-          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full mb-4">
-            Aerobic Lineup
+
+    <!-- Section 2: Interactive Facility Zone Blueprint Explorer (Dynamic Tabbed Layout) -->
+    <section id="zone-explorer" class="py-20 lg:py-28 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-14 space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
+            Interactive Blueprint Studio
           </span>
-          <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Smart Cardio Machine Specifications</h2>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+            Explore Dedicated Facility Zones
+          </h2>
+          <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            Every fitness discipline demands unique load tolerances, acoustic dampening, and spatial clearances. Click a zone to inspect its structural blueprint and recommended commercial hardware manifest.
+          </p>
+        </div>
+
+        <!-- 4 Interactive Zone Tab Selectors -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto mb-10 text-xs font-bold font-sans">
+          <button type="button" onclick="switchZone('strength')" id="tab-strength" class="zone-tab-btn p-4 rounded-2xl border-2 transition-all flex flex-col items-center gap-2 text-center border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 shadow-sm">
+            <span class="text-base">🏋️‍♂️</span>
+            <span>Zone 01: Power Rig Hub</span>
+          </button>
+          <button type="button" onclick="switchZone('cardio')" id="tab-cardio" class="zone-tab-btn p-4 rounded-2xl border transition-all flex flex-col items-center gap-2 text-center border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300 hover:border-indigo-400">
+            <span class="text-base">⚡</span>
+            <span>Zone 02: Cardio Deck</span>
+          </button>
+          <button type="button" onclick="switchZone('functional')" id="tab-functional" class="zone-tab-btn p-4 rounded-2xl border transition-all flex flex-col items-center gap-2 text-center border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300 hover:border-indigo-400">
+            <span class="text-base">🏃‍♂️</span>
+            <span>Zone 03: Turf & Agility</span>
+          </button>
+          <button type="button" onclick="switchZone('recovery')" id="tab-recovery" class="zone-tab-btn p-4 rounded-2xl border transition-all flex flex-col items-center gap-2 text-center border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300 hover:border-indigo-400">
+            <span class="text-base">🧘‍♀️</span>
+            <span>Zone 04: Recovery Lounge</span>
+          </button>
+        </div>
+
+        <!-- Zone Viewport Panels Container -->
+        <div class="rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 p-6 sm:p-10 shadow-xl overflow-hidden">
+          
+          <!-- Pane 1: Strength Power Rig Hub -->
+          <div id="pane-strength" class="zone-pane grid grid-cols-1 lg:grid-cols-12 gap-10 items-center text-left rtl:text-right">
+            <div class="lg:col-span-6 space-y-6">
+              <span class="px-3 py-1 rounded-md text-[10px] font-black uppercase tracking-widest bg-indigo-600 text-white inline-block">Heavy Structural Framework</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Modular Power Cages & Heavy Barbell Decks</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Engineered with 3" x 3" 11-gauge laser-cut structural steel uprights. Designed to withstand continuous 1,000+ lb drops with zero frame deflection and sound-damped J-cups.
+              </p>
+              
+              <!-- Technical Specs Matrix -->
+              <div class="grid grid-cols-2 gap-4 pt-2 text-xs">
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Floor Load Tolerance</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">125 lbs/sq ft dynamic</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Ceiling Height Clearance</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">90" standard / 84" low-loft</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Safety Corridor Spacing</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">48" between barbell bars</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Recommended Hardware</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">Rogue Monster Cages + Eleiko</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex gap-4">
+                <a href="buy.html" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold uppercase transition-colors">
+                  Shop Strength Cages
+                </a>
+                <a href="#b2b-terminal" class="px-6 py-3 rounded-xl bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white text-xs font-bold uppercase transition-colors">
+                  Get CAD Blueprint
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 relative group">
+              <div class="relative rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 shadow-xl aspect-[4/3]">
+                <img src="images/home2_featured.jpg" alt="Commercial power cage and strength equipment zone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Zone 01 Render</span>
+                    <h4 class="text-lg font-bold text-white">Heavy Compound Lifting Arena</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Cardio Deck -->
+          <div id="pane-cardio" class="zone-pane hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-center text-left rtl:text-right">
+            <div class="lg:col-span-6 space-y-6">
+              <span class="px-3 py-1 rounded-md text-[10px] font-black uppercase tracking-widest bg-purple-600 text-white inline-block">High-Density Aerobics</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Smart Incline Runners & Magnetic Spin Hub</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Quiet commercial motor configurations with live telemetry broadcasting. Arranged in sightline tiers with direct power and Ethernet conduits concealed beneath access flooring.
+              </p>
+              
+              <div class="grid grid-cols-2 gap-4 pt-2 text-xs">
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Power Requirements</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">Dedicated 20A / 2 units</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Dismount Clearances</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">36" safety lane behind deck</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Network Integration</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">Gigabit RJ45 + Bluetooth 5.2</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Featured Hardware</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">NordicTrack Pro + Keiser</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex gap-4">
+                <a href="buy.html" class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold uppercase transition-colors">
+                  Shop Cardio Fleet
+                </a>
+                <a href="#b2b-terminal" class="px-6 py-3 rounded-xl bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white text-xs font-bold uppercase transition-colors">
+                  Get CAD Blueprint
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 relative group">
+              <div class="relative rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 shadow-xl aspect-[4/3]">
+                <img src="images/cardio_equipment.jpg" alt="Commercial cardio runner and cycle deck layout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Zone 02 Render</span>
+                    <h4 class="text-lg font-bold text-white">Synchronized Telemetry Cardio Deck</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Functional Turf -->
+          <div id="pane-functional" class="zone-pane hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-center text-left rtl:text-right">
+            <div class="lg:col-span-6 space-y-6">
+              <span class="px-3 py-1 rounded-md text-[10px] font-black uppercase tracking-widest bg-emerald-600 text-white inline-block">High-Traction Agility</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Sprint Sled Tracks & Multi-Grip Rig Racks</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Seamless vulcanized athletic turf with inlaid yard markers. Supports heavy push sleds, battle ropes, plyo boxes, and ceiling-anchored gymnastics rings without tearing.
+              </p>
+              
+              <div class="grid grid-cols-2 gap-4 pt-2 text-xs">
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Turf Specification</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">15mm Poly + 10mm Foam Base</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Sled Track Length</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">60 ft continuous lane</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Rig Configuration</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">Wall-mount or free-standing</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Target Athletes</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">12 athletes simultaneous</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex gap-4">
+                <a href="buy.html" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase transition-colors">
+                  Shop Functional Gear
+                </a>
+                <a href="#b2b-terminal" class="px-6 py-3 rounded-xl bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white text-xs font-bold uppercase transition-colors">
+                  Get CAD Blueprint
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 relative group">
+              <div class="relative rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 shadow-xl aspect-[4/3]">
+                <img src="images/strength_equipment.jpg" alt="Commercial athletic turf and cross training rig" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Zone 03 Render</span>
+                    <h4 class="text-lg font-bold text-white">Performance Turf & Sled Track</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 4: Recovery Lounge -->
+          <div id="pane-recovery" class="zone-pane hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-center text-left rtl:text-right">
+            <div class="lg:col-span-6 space-y-6">
+              <span class="px-3 py-1 rounded-md text-[10px] font-black uppercase tracking-widest bg-teal-600 text-white inline-block">Regenerative Biomechanics</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Myofascial Release & Mobility Sanctuary</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Dedicated low-decibel decompression zone with antimicrobial cork flooring, pneumatic compression boots, deep-tissue percussion guns, and wall-mounted spine traction ladders.
+              </p>
+              
+              <div class="grid grid-cols-2 gap-4 pt-2 text-xs">
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Acoustic Isolation</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">&lt; 35 dB sound transmission</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Surface Material</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">100% natural organic cork</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Charging Station Hub</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">6x integrated USB-C docks</span>
+                </div>
+                <div class="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+                  <span class="text-gray-400 text-[10px] uppercase font-bold block">Footprint per Athlete</span>
+                  <span class="text-gray-900 dark:text-white font-black text-sm mt-0.5 block">60 sq ft dynamic buffer</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex gap-4">
+                <a href="buy.html" class="px-6 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold uppercase transition-colors">
+                  Shop Recovery Gear
+                </a>
+                <a href="#b2b-terminal" class="px-6 py-3 rounded-xl bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white text-xs font-bold uppercase transition-colors">
+                  Get CAD Blueprint
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 relative group">
+              <div class="relative rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 shadow-xl aspect-[4/3]">
+                <img src="images/about_flexibility.jpg" alt="Mobility yoga and post-workout recovery zone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <span class="text-xs font-bold text-teal-400 uppercase tracking-widest">Zone 04 Render</span>
+                    <h4 class="text-lg font-bold text-white">Kinetic Mobility & Recovery Lounge</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 3: Commercial Engineering Standards - Asymmetric Bento Grid -->
+    <section id="engineering-bento" class="py-20 lg:py-28 bg-slate-50 dark:bg-gray-950 border-b border-gray-150 dark:border-gray-900 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
+            Engineering Rigor
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+            Commercial Architectural Standards
+          </h2>
+          <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            A high-performance gym requires far more than placing equipment in a room. We engineer subfloor load dissipation, electrical drop corridors, and municipal safety egress pathways.
+          </p>
+        </div>
+
+        <!-- Bento Grid: 12-Column Asymmetric Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <!-- Tile 1: Large Featured (col-span-12 lg:col-span-7) -->
+          <div class="md:col-span-12 lg:col-span-7 rounded-3xl bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 p-8 sm:p-10 shadow-lg flex flex-col justify-between text-left rtl:text-right relative overflow-hidden group">
+            <div class="relative z-10 space-y-4">
+              <span class="px-3 py-1 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider inline-block">Spatial CAD Engine</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Precision 3D BIM & Structural Clearance Modeling</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl">
+                Every proposal includes native Revit, DWG, and SketchUp files accounting for structural columns, HVAC drops, and ceiling sprinklers. Zero field modifications required on delivery day.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-xs font-bold text-gray-700 dark:text-gray-300">
+                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-gray-800">✓ AutoCAD & Revit Files</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-gray-800">✓ 3D Virtual Walkthrough</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-gray-800">✓ Structural Column Clearance</span>
+              </div>
+            </div>
+            <div class="mt-8 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-md aspect-[16/9] relative">
+              <img src="images/cart_bulk.jpg" alt="FitFlex 3D CAD blueprints and equipment loading layout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+          </div>
+
+          <!-- Tile 2: Tall Metric (col-span-12 lg:col-span-5) -->
+          <div class="md:col-span-12 lg:col-span-5 rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-950 text-white p-8 sm:p-10 shadow-lg flex flex-col justify-between text-left rtl:text-right relative overflow-hidden">
+            <div class="space-y-4 relative z-10">
+              <span class="px-3 py-1 rounded bg-white/10 text-indigo-300 text-xs font-bold uppercase tracking-wider inline-block">Acoustic Shield</span>
+              <h3 class="text-2xl font-extrabold">Acoustic Subfloor & Drop Dissipation</h3>
+              <p class="text-sm text-indigo-100/80 leading-relaxed">
+                Commercial spaces in mixed-use buildings require vibration damping. Our dual-density 25mm vulcanized rubber absorbs 98.4% of impact energy from 500 lb barbell drops to protect subfloor concrete.
+              </p>
+              <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2 text-xs">
+                <div class="flex justify-between font-bold">
+                  <span class="text-indigo-200">Impact Vibration Reduction:</span>
+                  <span class="text-emerald-400 font-mono">98.4%</span>
+                </div>
+                <div class="flex justify-between font-bold">
+                  <span class="text-indigo-200">Sound Transmission Class (STC):</span>
+                  <span class="text-white font-mono">62 dB Rating</span>
+                </div>
+                <div class="flex justify-between font-bold">
+                  <span class="text-indigo-200">Compressive Modulus:</span>
+                  <span class="text-white font-mono">1,500 PSI Max</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 relative z-10">
+              <span class="text-xs text-indigo-300 font-bold block uppercase tracking-wider">Certified Safe for 2nd+ Floor Gyms</span>
+            </div>
+          </div>
+
+          <!-- Tile 3: Wide Technical Tile (col-span-12 sm:col-span-6 lg:col-span-5) -->
+          <div class="md:col-span-6 lg:col-span-5 rounded-3xl bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 p-8 shadow-lg text-left rtl:text-right space-y-4">
+            <span class="px-3 py-1 rounded bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold uppercase tracking-wider inline-block">Concealed Conduits</span>
+            <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Floor Channel Power & Data Routing</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              We design sub-mat electrical troughs so cords never cross pedestrian corridors. Keep cardio telemetry connected and power supplies fully invisible.
+            </p>
+            <div class="text-xs font-bold text-indigo-600 dark:text-indigo-400">
+              • Zero Tripping Hazards • Recessed Floor Boxes • Isolated Data Runs
+            </div>
+          </div>
+
+          <!-- Tile 4: Wide Safety Egress Tile (col-span-12 sm:col-span-6 lg:col-span-7) -->
+          <div class="md:col-span-6 lg:col-span-7 rounded-3xl bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 p-8 shadow-lg text-left rtl:text-right space-y-4">
+            <span class="px-3 py-1 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold uppercase tracking-wider inline-block">OSHA & ADA Compliant</span>
+            <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Municipal Safety Egress & Barbell Corridors</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              All layouts guarantee minimum 36-inch to 48-inch unobstructed egress pathways between stations, fulfilling local fire marshall requirements and international accessibility standards.
+            </p>
+            <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+              • Fire Marshall Approved • 48" Primary Corridors • Automated Emergency Stop Buffers
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 4: Enterprise Commercial Lease & Turnkey Fitout Packages -->
+    <section id="commercial-leasing" class="py-20 lg:py-28 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
+            Financial Architecture
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+            Commercial Outfitting & Lease Models
+          </h2>
+          <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            Conserve operational capital. Choose between 100% tax-deductible operational leases, custom lease-to-own models, or full turnkey hardware ownership.
+          </p>
+        </div>
+
+        <!-- 2-Column Asymmetric Packages Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left: Flagship Turnkey Fitout (col-span-12 lg:col-span-7) -->
+          <div class="lg:col-span-7 rounded-3xl bg-slate-900 text-white p-8 sm:p-12 border-2 border-indigo-500 shadow-2xl flex flex-col justify-between text-left rtl:text-right relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+              <span class="text-9xl font-black">PRO</span>
+            </div>
+
+            <div class="space-y-6 relative z-10">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest bg-indigo-600 text-white">
+                  Flagship Turnkey Fitout
+                </span>
+                <span class="text-xs font-bold text-emerald-400">Zero Upfront CapEx Option</span>
+              </div>
+
+              <div>
+                <h3 class="text-3xl font-black">Complete Commercial Studio Package</h3>
+                <p class="text-sm text-gray-300 mt-2">
+                  Full facility outfitting for spaces 1,000 to 5,000+ sq ft. Includes 3D CAD design, custom laser-etched powder-coating in your brand colors, white-glove transport, and certified technician installation.
+                </p>
+              </div>
+
+              <!-- Included Manifest Checklist -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-4 border-t border-white/10">
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Full 3D CAD & Walkthrough Renders</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>11-Gauge Modular Power Cages</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Commercial Incline Cardio Runners</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>25mm Vulcanized Acoustic Subfloor</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Quarterly On-Site Tech Inspections</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>24-Hour Emergency Swap Guarantee</span>
+                </div>
+              </div>
+
+              <div class="pt-6 border-t border-white/10 flex flex-wrap items-baseline justify-between gap-4">
+                <div>
+                  <span class="text-xs text-gray-400 block uppercase tracking-wider font-bold">Structured Leasing From</span>
+                  <span class="text-3xl sm:text-4xl font-black text-white">$899 <span class="text-sm font-normal text-gray-400">/ month</span></span>
+                </div>
+                <a href="#b2b-terminal" class="px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition-all">
+                  Get Turnkey Proposal
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Two Stacked Strategic Lease Models (col-span-12 lg:col-span-5) -->
+          <div class="lg:col-span-5 flex flex-col justify-between gap-6">
+            
+            <!-- Option A: Operational OpEx Lease -->
+            <div class="p-8 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 shadow-md text-left rtl:text-right space-y-4 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="px-3 py-1 rounded text-[10px] font-black uppercase tracking-wider bg-purple-100 dark:bg-purple-950 text-purple-600 dark:text-purple-400 inline-block mb-2">100% Tax-Deductible</span>
+                <h4 class="text-xl font-bold text-gray-900 dark:text-white">OpEx Fleet Operational Lease</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                  Treat equipment strictly as operating costs. Free quarterly parts replacement and zero penalty fleet swaps every 24-36 months to keep your gym updated with cutting-edge gear.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-xs font-bold">
+                <span class="text-gray-900 dark:text-white font-black text-base">$399 <span class="text-xs font-normal text-gray-500">/ mo baseline</span></span>
+                <a href="rent.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">Explore OpEx Tiers →</a>
+              </div>
+            </div>
+
+            <!-- Option B: CapEx Lease-to-Own -->
+            <div class="p-8 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 shadow-md text-left rtl:text-right space-y-4 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="px-3 py-1 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 inline-block mb-2">Equity Builder</span>
+                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Capital Lease-to-Own (CapEx)</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                  Build gym balance sheet asset equity over 24 to 48 months with predictable low payments and \$1 end-of-term ownership transfer. Lifetime structural frame warranties included.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-xs font-bold">
+                <span class="text-gray-900 dark:text-white font-black text-base">$549 <span class="text-xs font-normal text-gray-500">/ mo baseline</span></span>
+                <a href="buy.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Purchase Paths →</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 5: Interactive 3D Space Area & Payload Calculator (Reactive) -->
+    <section id="space-calculator" class="py-20 lg:py-28 bg-slate-50 dark:bg-gray-950 border-b border-gray-150 dark:border-gray-900 transition-colors duration-300">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
+            Real-Time Estimator
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+            Facility Space & Floor Load Estimator
+          </h2>
+          <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            Configure your facility parameters below. Our calculation engine instantly models your equipment capacity, structural frame requirements, and floor load payload.
+          </p>
+        </div>
+
+        <div class="p-8 sm:p-12 rounded-3xl bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 shadow-2xl text-left rtl:text-right grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+          
+          <!-- Input Form Left (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Area Selector -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                1. Total Facility Footprint
+              </label>
+              <select id="calcAreaSelect" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-800 bg-slate-50 dark:bg-gray-950 text-gray-900 dark:text-white font-bold text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                <option value="compact">Studio / Private Training Suite (150 – 400 sq ft)</option>
+                <option value="medium" selected>Boutique Athletic Studio (400 – 1,500 sq ft)</option>
+                <option value="large">Full-Scale Commercial Health Club (1,500 – 6,000+ sq ft)</option>
+              </select>
+            </div>
+
+            <!-- Training Discipline -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                2. Core Training Discipline
+              </label>
+              <select id="calcDisciplineSelect" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-800 bg-slate-50 dark:bg-gray-950 text-gray-900 dark:text-white font-bold text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                <option value="strength" selected>Heavy Olympic Strength & Powerlifting</option>
+                <option value="cardio">High-Volume Cardio & Incline Conditioning</option>
+                <option value="functional">Cross-Training & Functional Sled Turf</option>
+                <option value="hybrid">All-In-One Balanced Multi-Zone Studio</option>
+              </select>
+            </div>
+
+            <!-- Ceiling Clearance -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                3. Vertical Ceiling Clearance
+              </label>
+              <select id="calcCeilingSelect" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-800 bg-slate-50 dark:bg-gray-950 text-gray-900 dark:text-white font-bold text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                <option value="low">Standard Residential / Low-Ceiling (8 ft – 9 ft)</option>
+                <option value="standard" selected>Standard Commercial Ceiling (10 ft – 12 ft)</option>
+                <option value="high">High Loft / Warehouse Industrial (12+ ft)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Output Card Right (5 Cols) -->
+          <div class="lg:col-span-5 rounded-2xl bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-950 text-white p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-xl border border-indigo-500/30">
+            <div class="space-y-4">
+              <span class="px-3 py-1 rounded bg-indigo-500/20 text-indigo-300 text-[10px] font-black uppercase tracking-wider inline-block">
+                Modeled Output Profile
+              </span>
+              
+              <h4 id="calcOutputTitle" class="text-xl font-black text-white">
+                Boutique Strength Performance Arena
+              </h4>
+              
+              <!-- Metrics Grid -->
+              <div class="space-y-3 pt-2 text-xs border-t border-white/10">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Max Athlete Capacity:</span>
+                  <span id="calcAthletes" class="font-black text-emerald-400 text-sm">12 – 18 Simultaneous</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Floor Load Payload:</span>
+                  <span id="calcPayload" class="font-black text-indigo-300 text-sm">4,800 lbs Total</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Recommended Rig Model:</span>
+                  <span id="calcRigModel" class="font-black text-white text-sm">Titan 90" Modular Rig</span>
+                </div>
+                <div class="pt-2">
+                  <span class="text-gray-400 block text-[10px] uppercase font-bold">Suggested Equipment Package:</span>
+                  <p id="calcManifest" class="text-xs text-indigo-100 font-medium mt-1 leading-relaxed">
+                    4x Modular Cages, 2x Incline Runners, 8x Olympic Bars, 800kg Urethane Plates, and 25mm Subfloor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10">
+              <a href="#b2b-terminal" class="w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold uppercase tracking-wider transition-all block text-center shadow-md">
+                Lock In This 3D Configuration
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 6: Real Facility Transformations (Commercial Case Studies) -->
+    <section id="commercial-case-studies" class="py-20 lg:py-28 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
+            Proven Transformations
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+            Commercial Outfitting Case Studies
+          </h2>
+          <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+            See how facility operators partnered with FitFlex to maximize member throughput, acoustic isolation, and square-foot revenue.
+          </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left rtl:text-right">
-          <!-- Cardio 1 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 flex flex-col justify-between">
-            <div>
-              <h4 class="font-extrabold text-base text-gray-900 dark:text-white mb-2">Smart Incline Treadmill</h4>
-              <p class="text-xs text-gray-500 leading-relaxed mb-4">Optimized shock absorbing cushioning deck to protect runners' joints.</p>
-              <ul class="text-[10px] text-gray-450 space-y-1.5 border-t border-slate-200 dark:border-gray-800 pt-3">
-                <li>• **Speed Limits**: Up to 12 MPH digital speed adjustment.</li>
-                <li>• **Power Source**: 3.5 CHP continuous-duty motor.</li>
-                <li>• **Inclining**: -3% decline to 15% digital incline slots.</li>
-              </ul>
+          
+          <!-- Case Study 1 -->
+          <div class="rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 overflow-hidden shadow-lg flex flex-col justify-between group">
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="images/home2_featured.jpg" alt="Apex Performance Center commercial gym fitout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600 text-white text-[10px] font-black uppercase">
+                Athletic Club
+              </div>
             </div>
-            <a href="buy.html" class="w-full py-2.5 mt-6 text-center text-xs font-bold uppercase bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl block">Shop Treadmills</a>
-          </div>
-          <!-- Cardio 2 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 flex flex-col justify-between">
-            <div>
-              <h4 class="font-extrabold text-base text-gray-900 dark:text-white mb-2">Magnetic Spin Bike</h4>
-              <p class="text-xs text-gray-550 leading-relaxed mb-4">Zero contact magnetic flywheels for silent residential cardio sessions.</p>
-              <ul class="text-[10px] text-gray-450 space-y-1.5 border-t border-slate-200 dark:border-gray-800 pt-3">
-                <li>• **Resistance**: 100 digital magnetic micro-levels.</li>
-                <li>• **Drive Belt**: Poly-V commercial drive belt system.</li>
-                <li>• **Pedal Style**: Dual-link SPD cleats and toe cage pins.</li>
-              </ul>
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div class="space-y-2">
+                <span class="text-xs text-gray-400 block uppercase tracking-wider font-bold">Denver, Colorado • 4,500 sq ft</span>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white">Apex High-Altitude Performance Center</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+                  "FitFlex's CAD team solved our 10-foot ceiling restriction and engineered a custom 24-station modular rig that increased our peak class capacity by 65%."
+                </p>
+              </div>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-800 text-[11px] font-bold text-indigo-600 dark:text-indigo-400">
+                14-Day Full Turnkey Deployment • 24 Cages Installed
+              </div>
             </div>
-            <a href="buy.html" class="w-full py-2.5 mt-6 text-center text-xs font-bold uppercase bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl block">Shop Spin Cycles</a>
           </div>
-          <!-- Cardio 3 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 flex flex-col justify-between">
-            <div>
-              <h4 class="font-extrabold text-base text-gray-900 dark:text-white mb-2">Concept2 Air Rower</h4>
-              <p class="text-xs text-gray-550 leading-relaxed mb-4">High monorail slide tracks providing absolute fluid stroke movements.</p>
-              <ul class="text-[10px] text-gray-450 space-y-1.5 border-t border-slate-200 dark:border-gray-800 pt-3">
-                <li>• **Damper Setting**: Spiral dampers ranging from 1 to 10.</li>
-                <li>• **Telemetry**: PM5 monitor tracking strokes, drag, and calories.</li>
-                <li>• **Structure**: Quick-separation body lock framework.</li>
-              </ul>
+
+          <!-- Case Study 2 -->
+          <div class="rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 overflow-hidden shadow-lg flex flex-col justify-between group">
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="images/home2_accessories.jpg" alt="Iron and Oak boutique gym space" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-purple-600 text-white text-[10px] font-black uppercase">
+                Boutique Studio
+              </div>
             </div>
-            <a href="buy.html" class="w-full py-2.5 mt-6 text-center text-xs font-bold uppercase bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl block">Shop Rowers</a>
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div class="space-y-2">
+                <span class="text-xs text-gray-400 block uppercase tracking-wider font-bold">Austin, Texas • 1,800 sq ft</span>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white">Iron & Oak Strength Studio</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+                  "Zero downtime, seamless floor sub-layer installation, and the equipment leases saved us $120,000 in upfront startup capital."
+                </p>
+              </div>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-800 text-[11px] font-bold text-purple-600 dark:text-purple-400">
+                Custom Olive-Powder Rigs • Acoustic Sled Turf
+              </div>
+            </div>
           </div>
+
+          <!-- Case Study 3 -->
+          <div class="rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 overflow-hidden shadow-lg flex flex-col justify-between group">
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="images/showroom.jpg" alt="Skyline corporate fitness facility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-emerald-600 text-white text-[10px] font-black uppercase">
+                Corporate HQ
+              </div>
+            </div>
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div class="space-y-2">
+                <span class="text-xs text-gray-400 block uppercase tracking-wider font-bold">Seattle, Washington • 950 sq ft</span>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white">Horizon Executive Wellness Lab</h4>
+                <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+                  "Sound isolation was critical on the 32nd floor. FitFlex's vibration-damped subfloor eliminated all structural resonance for tenant offices below."
+                </p>
+              </div>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-800 text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                Low-Decibel Silent Spin & Treadmill Stations
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
-    <!-- Section 3: Heavy Strength Cages & Steel Crossovers -->
-    <section id="strength-cages" class="py-20 bg-slate-50 dark:bg-gray-950 border-b border-gray-150 dark:border-gray-900 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center text-left rtl:text-right">
-          <!-- Text Left -->
-          <div class="space-y-6">
-            <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
-              Power Rigs
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              Modular Squat Cages & Racks
-            </h2>
-            <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-              Plan custom rack clearances. Our commercial squat racks use 3" x 3" 11-gauge steel uprights. Choose between flat-foot configurations or floor-bolted plates to support heavy lifting loads safely.
-            </p>
-            <div class="p-4 bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900 text-xs text-indigo-900 dark:text-indigo-200 rounded-xl">
-              ⛓️ **Rack Clearance Specifications**: Base dimensions 49" Width x 48" Depth. Vertical height options: 90" standard or 84" low-ceiling adjustments.
-            </div>
-          </div>
 
-          <!-- Image Right (Rogue close up rack) -->
-          <div class="relative group">
-            <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-10 blur-xl"></div>
-            <div class="relative overflow-hidden rounded-2xl border border-gray-250 dark:border-gray-800 shadow-xl">
-              <img src="images/home2_featured.jpg" alt="Rogue squat rack cages and structural details" class="w-full object-cover aspect-[3/2]" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: The FitFlex Rental Privilege Club -->
-    <section id="rental-privilege" class="py-20 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-805 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
-        <div>
-          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full mb-4">
-            Rental Privilege
+    <!-- Section 7: B2B Project Terminal & Consultation Desk -->
+    <section id="b2b-terminal" class="py-20 lg:py-28 bg-gradient-to-b from-slate-950 via-gray-900 to-slate-950 text-white transition-colors duration-300">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+        
+        <div class="space-y-4">
+          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest bg-white/10 text-indigo-300 rounded-full">
+            Commercial Commissioning
           </span>
-          <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Privileged Rental Membership Tiers</h2>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Initiate Your Facility Blueprint Today
+          </h2>
+          <p class="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Speak directly with our commercial facility architects. We deliver your preliminary 3D spatial layout and equipment manifest within 24 business hours.
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left rtl:text-right text-xs">
-          <!-- Tier 1 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 flex flex-col justify-between">
-            <div>
-              <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[9px] block">Bronze Tier</span>
-              <span class="text-xl font-black text-gray-950 dark:text-white block mt-1">$29/month</span>
-              <p class="text-gray-500 mt-3 leading-relaxed">Perfect for home studios. Includes premium yoga packages, resistance bands, and kettlebell sets.</p>
-            </div>
-            <a href="rent.html" class="w-full py-2.5 mt-6 text-center font-bold uppercase rounded-xl border border-slate-200 dark:border-gray-800 hover:border-indigo-600 transition-colors block">Lease Bronze</a>
-          </div>
-          <!-- Tier 2 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border-2 border-indigo-600 flex flex-col justify-between relative">
-            <span class="absolute -top-3 right-4 px-2 py-0.5 rounded bg-indigo-600 text-white text-[8px] font-black uppercase">Standard Choice</span>
-            <div>
-              <span class="font-extrabold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest text-[9px] block">Silver Tier</span>
-              <span class="text-xl font-black text-gray-900 dark:text-white block mt-1">$49/month</span>
-              <p class="text-gray-500 mt-3 leading-relaxed">Includes professional adjustable benches, spin bikes, rowers, and basic racks.</p>
-            </div>
-            <a href="rent.html" class="w-full py-2.5 mt-6 text-center font-bold uppercase rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white block">Lease Silver</a>
-          </div>
-          <!-- Tier 3 -->
-          <div class="p-6 rounded-2xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 flex flex-col justify-between">
-            <div>
-              <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[9px] block">Gold Tier</span>
-              <span class="text-xl font-black text-gray-950 dark:text-white block mt-1">$199/month</span>
-              <p class="text-gray-500 mt-3 leading-relaxed">Commercial level setups. Full incline treadmills, custom cable stacks, and Olympic cage packages.</p>
-            </div>
-            <a href="rent.html" class="w-full py-2.5 mt-6 text-center font-bold uppercase rounded-xl border border-slate-200 dark:border-gray-800 hover:border-indigo-600 transition-colors block">Lease Gold</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: Professional Gym Assembly & Logistics -->
-    <section id="assembly-logistics" class="py-20 bg-slate-50 dark:bg-gray-950 border-b border-gray-150 dark:border-gray-900 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center text-left rtl:text-right">
-          <!-- Text Left -->
-          <div class="space-y-6">
-            <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full">
-              Delivery Steps
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              Consolidated Delivery & Setup Guidelines
-            </h2>
-            <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-              We manage all phases of gym transport and setup. Prior to shipping, technicians test belt alignments, verify motor CHP values, and clean raw metals. Our regional truck handles transport, carries the gear inside, and completes structural construction in under 2 hours.
-            </p>
-            
-            <!-- Interactive timeline list -->
-            <div class="space-y-4 text-xs font-medium text-gray-500 dark:text-gray-400">
-              <div class="flex gap-3">
-                <span class="w-6 h-6 rounded-full bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-black">1</span>
-                <div>
-                  <h5 class="font-bold text-gray-950 dark:text-white">Pre-Shipment Diagnostics</h5>
-                  <p class="text-[10px]">Treadmills run for 30 minutes to verify internal motor speed calibration sensors.</p>
-                </div>
+        <!-- Consultation Form Container -->
+        <div class="p-8 sm:p-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur text-left rtl:text-right shadow-2xl">
+          <form id="facilityConsultForm" class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! A FitFlex Commercial Facility Architect has received your blueprint request and will deliver your preliminary 3D CAD proposal within 24 business hours.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs font-bold">
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Facility Square Footage</label>
+                <input type="number" required placeholder="e.g. 2,500 sq ft" class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm" />
               </div>
-              <div class="flex gap-3">
-                <span class="w-6 h-6 rounded-full bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-black">2</span>
-                <div>
-                  <h5 class="font-bold text-gray-950 dark:text-white">En-Route Tracking Coordinates</h5>
-                  <p class="text-[10px]">Active GPS routes dispatch delivery timings straight to customer dashboard nodes.</p>
-                </div>
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Project Classification</label>
+                <select class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm">
+                  <option>Commercial Health Club</option>
+                  <option>Boutique CrossFit / Functional Studio</option>
+                  <option>Corporate Wellness Center</option>
+                  <option>University / School Athletic Weight Room</option>
+                  <option>Luxury Residential Gym Suite</option>
+                </select>
               </div>
-              <div class="flex gap-3">
-                <span class="w-6 h-6 rounded-full bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-black">3</span>
-                <div>
-                  <h5 class="font-bold text-gray-950 dark:text-white">Technician Assembly Calibration</h5>
-                  <p class="text-[10px]">Cages are constructed, frames leveled, and console screen connections tested standard.</p>
-                </div>
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Target Launch Date</label>
+                <select class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm">
+                  <option>Immediate (Under 30 Days)</option>
+                  <option>30 to 60 Days</option>
+                  <option>60 to 120 Days</option>
+                  <option>Future Planning / Conceptual</option>
+                </select>
+              </div>
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Primary Contact Name</label>
+                <input type="text" required placeholder="John Doe, Facility Director" class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm" />
+              </div>
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Direct Phone Line</label>
+                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm" />
+              </div>
+              <div>
+                <label class="block uppercase tracking-wider text-gray-300 mb-2">Official Email Address</label>
+                <input type="email" required placeholder="director@facility.com" class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-slate-900/90 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-sans text-sm" />
               </div>
             </div>
-          </div>
 
-          <!-- Image Right (Cardio setups) -->
-          <div class="relative group">
-            <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-purple-500 to-indigo-500 opacity-10 blur-xl"></div>
-            <div class="relative overflow-hidden rounded-2xl border border-gray-250 dark:border-gray-800 shadow-xl">
-              <img src="images/home2_accessories.jpg" alt="FitFlex cardio cycles showroom showcase" class="w-full object-cover aspect-[3/2]" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-indigo-500 text-white shadow-xl shadow-indigo-600/30 transition-all font-sans">
+              Generate Preliminary 3D CAD Plan & Manifest
+            </button>
+          </form>
 
-    <!-- Section 6: Interactive Space Area Planner (Gym Sizing) -->
-    <section id="space-planner" class="py-20 bg-white dark:bg-gray-900 border-b border-gray-150 dark:border-gray-805 transition-colors duration-300">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
-        <div>
-          <span class="inline-block px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 bg-indigo-100/60 dark:bg-indigo-950/40 rounded-full mb-4">
-            Floor Planning
-          </span>
-          <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Smart Space Area Planner</h2>
-        </div>
-
-        <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-850 text-left rtl:text-right grid grid-cols-1 md:grid-cols-2 gap-8 text-xs font-bold">
-          <div class="space-y-4">
-            <div>
-              <label class="block text-gray-500 uppercase tracking-wider mb-2">Available Gym Area</label>
-              <select id="gymArea" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-600 text-sm">
-                <option value="studio">Studio Corner (50 - 150 sq ft)</option>
-                <option value="garage">Garage Studio (150 - 400 sq ft)</option>
-                <option value="club">Commercial Facility (400+ sq ft)</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-gray-500 uppercase tracking-wider mb-2">Workout Discipline</label>
-              <select id="gymType" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-600 text-sm">
-                <option value="strength">Heavy Strength training</option>
-                <option value="cardio">Cardio & Weight loss</option>
-                <option value="mixed">Mixed Athletic training</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 flex flex-col justify-between">
-            <div>
-              <span class="block text-gray-400 mb-1 uppercase tracking-widest text-[9px]">Recommended Fleet Package</span>
-              <span id="calcTitle" class="font-extrabold text-base text-gray-900 dark:text-white block mt-1">Select parameters above</span>
-              <p id="calcDesc" class="text-[11px] text-gray-500 font-medium mt-2">Get real-time sizing listings matching your coordinates.</p>
-            </div>
-            <a href="buy.html" class="w-full py-3 mt-4 text-center rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold uppercase transition-all block">
-              View Package Details
-            </a>
+          <!-- Trust Badges -->
+          <div class="mt-8 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-xs text-gray-400">
+            <div>🛡️ ISO 9001 Certified 11-Gauge Structural Steel</div>
+            <div>⚡ 24-Hour Guaranteed 3D CAD Delivery SLA</div>
+            <div>🚚 Certified White-Glove On-Site Assembly Team</div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Section 7: B2B Technician SLA Installation Callout -->
-    <section id="installation-sla" class="py-16 bg-gradient-to-br from-indigo-900 to-indigo-950 text-white transition-colors duration-300">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <span class="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-white/10 rounded-full">Support SLA</span>
-        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Active Calibration & Assembly Guarantee</h3>
-        <p class="text-sm text-indigo-200/80 max-w-xl mx-auto">
-          FitFlex ensures 12-hour customer support turnaround and free 1-year technician calibration check-ups for all layouts.
-        </p>
       </div>
     </section>
 
@@ -633,57 +1193,127 @@
     </div>
   </footer>
 
-  <!-- Interactive JavaScript for space estimator -->
+  
+  <!-- Interactive JavaScript for Zone Explorer, Space Calculator, Theme, and RTL -->
   <script>
-    // --- Space Planner Calculator Logic ---
-    const gymArea = document.getElementById('gymArea');
-    const gymType = document.getElementById('gymType');
-    const calcTitle = document.getElementById('calcTitle');
-    const calcDesc = document.getElementById('calcDesc');
+    // --- Interactive Zone Explorer Logic ---
+    function switchZone(zoneKey) {
+      // Hide all panes
+      const panes = document.querySelectorAll('.zone-pane');
+      panes.forEach(p => p.classList.add('hidden'));
 
-    function updateCalculator() {
-      const area = gymArea.value;
-      const type = gymType.value;
+      // Remove active classes on all buttons
+      const tabs = document.querySelectorAll('.zone-tab-btn');
+      tabs.forEach(t => {
+        t.classList.remove('border-indigo-600', 'bg-indigo-50/50', 'dark:bg-indigo-950/30', 'text-indigo-600', 'dark:text-indigo-400', 'shadow-sm');
+        t.classList.add('border-gray-200', 'dark:border-gray-800', 'bg-white', 'dark:bg-gray-950', 'text-gray-700', 'dark:text-gray-300');
+      });
 
-      if (area === 'studio') {
-        if (type === 'strength') {
-          calcTitle.textContent = 'Compact Power Corner';
-          calcDesc.textContent = '1x Modular Dumbbell Kit, 1x Eco Alignment Mat, and 1x Flat Bench.';
-        } else if (type === 'cardio') {
-          calcTitle.textContent = 'Aerobic Corner Suite';
-          calcDesc.textContent = '1x Smart Spin Cycle and 1x Premium yoga mat loops bundle.';
+      // Show targeted pane
+      const targetPane = document.getElementById('pane-' + zoneKey);
+      if (targetPane) {
+        targetPane.classList.remove('hidden');
+      }
+
+      // Activate clicked tab
+      const targetTab = document.getElementById('tab-' + zoneKey);
+      if (targetTab) {
+        targetTab.classList.remove('border-gray-200', 'dark:border-gray-800', 'bg-white', 'dark:bg-gray-950', 'text-gray-700', 'dark:text-gray-300');
+        targetTab.classList.add('border-indigo-600', 'bg-indigo-50/50', 'dark:bg-indigo-950/30', 'text-indigo-600', 'dark:text-indigo-400', 'shadow-sm');
+      }
+    }
+
+
+    // --- Reactive Facility Space & Payload Estimator Logic ---
+    const calcAreaSelect = document.getElementById('calcAreaSelect');
+    const calcDisciplineSelect = document.getElementById('calcDisciplineSelect');
+    const calcCeilingSelect = document.getElementById('calcCeilingSelect');
+
+    const calcOutputTitle = document.getElementById('calcOutputTitle');
+    const calcAthletes = document.getElementById('calcAthletes');
+    const calcPayload = document.getElementById('calcPayload');
+    const calcRigModel = document.getElementById('calcRigModel');
+    const calcManifest = document.getElementById('calcManifest');
+
+    function updateFacilityCalculator() {
+      const area = calcAreaSelect.value;
+      const discipline = calcDisciplineSelect.value;
+      const ceiling = calcCeilingSelect.value;
+
+      // Calculate Rig Model based on ceiling
+      let rigModel = 'Titan 90" Modular Rig';
+      if (ceiling === 'low') {
+        rigModel = 'Compact 84" Low-Ceiling Flush Rig';
+      } else if (ceiling === 'high') {
+        rigModel = 'Pro Series 108" Flying Pull-Up Cage';
+      }
+      calcRigModel.textContent = rigModel;
+
+      // Calculate capacity and payload based on area & discipline
+      if (area === 'compact') {
+        calcAthletes.textContent = '3 – 6 Simultaneous';
+        if (discipline === 'strength') {
+          calcOutputTitle.textContent = 'Private Powerlifting Studio';
+          calcPayload.textContent = '2,400 lbs Total';
+          calcManifest.textContent = '1x Modular Squat Cage, 1x Olympic Barbell, 300kg Urethane Plates, 1x Adjustable Bench, 25mm Subfloor.';
+        } else if (discipline === 'cardio') {
+          calcOutputTitle.textContent = 'High-Intensity Cardio Alcove';
+          calcPayload.textContent = '1,150 lbs Total';
+          calcManifest.textContent = '2x Smart Incline Runners, 2x Magnetic Spin Cycles, 1x Air Rower, Sound-Damped Mats.';
+        } else if (discipline === 'functional') {
+          calcOutputTitle.textContent = 'Compact Agility & Mobility Corner';
+          calcPayload.textContent = '1,650 lbs Total';
+          calcManifest.textContent = '15m Sled Track, 1x Prowler Sled, Wall Ball Target, Kettlebell Set (12-32kg), Cork Mats.';
         } else {
-          calcTitle.textContent = 'Yoga Strength Station';
-          calcDesc.textContent = '1x Adjustable dumbbells, 1x block kit, and resistance loops.';
+          calcOutputTitle.textContent = 'Balanced Executive Suite';
+          calcPayload.textContent = '1,900 lbs Total';
+          calcManifest.textContent = '1x Half Cage, 1x Incline Treadmill, 1x Spin Bike, Barbell + Bumper Plates, Flooring.';
         }
-      } else if (area === 'garage') {
-        if (type === 'strength') {
-          calcTitle.textContent = 'Garage Heavy Rig Setup';
-          calcDesc.textContent = '1x Rogue Squat Cage, 1x Olympic barbell + 100kg plates, and 1x bench.';
-        } else if (type === 'cardio') {
-          calcTitle.textContent = 'Garage Cardio Station';
-          calcDesc.textContent = '1x NordicTrack Treadmill, 1x Concept2 Rower, and protective floor tiles.';
+      } else if (area === 'medium') {
+        calcAthletes.textContent = '12 – 20 Simultaneous';
+        if (discipline === 'strength') {
+          calcOutputTitle.textContent = 'Boutique Strength Performance Arena';
+          calcPayload.textContent = '4,800 lbs Total';
+          calcManifest.textContent = '4x Modular Cages, 8x Olympic Bars, 800kg Urethane Plates, 4x Commercial Benches, 25mm Subfloor.';
+        } else if (discipline === 'cardio') {
+          calcOutputTitle.textContent = 'Synchronized Aerobic Studio';
+          calcPayload.textContent = '3,200 lbs Total';
+          calcManifest.textContent = '6x Smart Incline Runners, 6x Magnetic Spin Cycles, 4x Air Rowers, Dedicated 20A Floor Drops.';
+        } else if (discipline === 'functional') {
+          calcOutputTitle.textContent = 'Functional Athletic Box';
+          calcPayload.textContent = '4,100 lbs Total';
+          calcManifest.textContent = '30m Sled Track, 2x Push Sleds, 6x Wall Ball Targets, Modular Rig with Flying Bars, Plyo Sets.';
         } else {
-          calcTitle.textContent = 'Garage Cross-Training Zone';
-          calcDesc.textContent = '1x Squat stand, 1x Smart Cycle, and 1x set of bumper plates.';
+          calcOutputTitle.textContent = 'Hybrid Commercial Studio';
+          calcPayload.textContent = '4,500 lbs Total';
+          calcManifest.textContent = '2x Modular Cages, 4x Treadmills, 4x Cycles, 15m Turf Track, Dumbbell Set (5-100 lbs).';
         }
-      } else {
-        if (type === 'strength') {
-          calcTitle.textContent = 'Commercial Strength Zone';
-          calcDesc.textContent = '3x Modular Racks, 2x Cable Crossovers, and 500kg total weights.';
-        } else if (type === 'cardio') {
-          calcTitle.textContent = 'Commercial Cardio Row';
-          calcDesc.textContent = '5x Incline Treadmills, 5x Air Rowers, and 5x Smart cycles.';
+      } else { // large
+        calcAthletes.textContent = '35 – 60+ Simultaneous';
+        if (discipline === 'strength') {
+          calcOutputTitle.textContent = 'Full-Scale Olympic Power Center';
+          calcPayload.textContent = '14,500 lbs Total';
+          calcManifest.textContent = '12x 11-Gauge Monster Cages, 6x Olympic Platforms, 2,500kg Bumper Plates, 10x Benches, Cable Stacks.';
+        } else if (discipline === 'cardio') {
+          calcOutputTitle.textContent = 'Commercial Cardio Fleet Complex';
+          calcPayload.textContent = '8,800 lbs Total';
+          calcManifest.textContent = '20x Smart Incline Runners, 15x Spin Cycles, 10x Rowers, 5x Stair Climbers, Central Telemetry.';
+        } else if (discipline === 'functional') {
+          calcOutputTitle.textContent = 'Elite Cross-Training Facility';
+          calcPayload.textContent = '11,200 lbs Total';
+          calcManifest.textContent = '50m Dual Sled Tracks, 24-Foot Free-Standing Rig, 12x Pull-Up Bays, GHD Benches, Full Plyo Sets.';
         } else {
-          calcTitle.textContent = 'Consolidated Gym Fleet';
-          calcDesc.textContent = 'Complete matching set of racks, treadmills, rowers, and recovery mats.';
+          calcOutputTitle.textContent = 'Complete Turnkey Commercial Health Club';
+          calcPayload.textContent = '13,500 lbs Total';
+          calcManifest.textContent = '8x Cages, 12x Cardio Units, 30m Turf, Dumbbell Racks (5-120 lbs), Cable Crossovers, Recovery Hub.';
         }
       }
     }
 
-    gymArea.addEventListener('change', updateCalculator);
-    gymType.addEventListener('change', updateCalculator);
-    updateCalculator(); // Initial load
+    calcAreaSelect.addEventListener('change', updateFacilityCalculator);
+    calcDisciplineSelect.addEventListener('change', updateFacilityCalculator);
+    calcCeilingSelect.addEventListener('change', updateFacilityCalculator);
+    updateFacilityCalculator(); // Initial load
 
 
     // --- Dark/Light Mode ---
@@ -738,7 +1368,7 @@
     }
 
 
-    // --- RTL ---
+    // --- RTL Layout Direction ---
     const rtlToggleBtn = document.getElementById('rtlToggleBtn');
     const mobileRtlToggleBtn = document.getElementById('mobileRtlToggleBtn');
 
@@ -754,7 +1384,7 @@
     mobileRtlToggleBtn.addEventListener('click', toggleRTL);
 
 
-    // --- Mobile Menu Toggle ---
+    // --- Mobile Menu Drawer Toggle ---
     const mobileMenuToggleBtn = document.getElementById('mobileMenuToggleBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const hamburgerIcon = document.getElementById('hamburgerIcon');
